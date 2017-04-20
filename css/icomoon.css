@@ -1,0 +1,83 @@
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?ay4pqf');
+	src:  url('../fonts/icomoon.eot?ay4pqf#iefix') format('embedded-opentype'),
+	url('../fonts/icomoon.ttf?ay4pqf') format('truetype'),
+	url('../fonts/icomoon.woff?ay4pqf') format('woff'),
+	url('../fonts/icomoon.svg?ay4pqf#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+	content: "\e90b";
+}
+.icon-download-btm:before {
+	content: "\e907";
+}
+.icon-download-top:before {
+	content: "\e908";
+}
+.icon-check:before {
+	content: "\e909";
+}
+.icon-medium:before {
+	content: "\e90a";
+}
+.icon-arrow_dropdown:before {
+	content: "\e900";
+}
+.icon-bitcointalk:before {
+	content: "\e901";
+}
+.icon-control:before {
+	content: "\e902";
+}
+.icon-data:before {
+	content: "\e903";
+}
+.icon-fb:before {
+	content: "\e904";
+}
+.icon-increasing:before {
+	content: "\e905";
+}
+.icon-linkedin:before {
+	content: "\e906";
+}
+.icon-newAsset:before {
+	content: "\e90c";
+}
+.icon-playVideo:before {
+	content: "\e90d";
+}
+.icon-redit:before {
+	content: "\e90e";
+}
+.icon-slack:before {
+	content: "\e90f";
+}
+.icon-twitter:before {
+	content: "\e910";
+}
+.icon-whitepaper:before {
+	content: "\e911";
+}
+.icon-youtube:before {
+	content: "\e912";
+}

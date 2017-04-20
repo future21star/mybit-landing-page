@@ -1,0 +1,133 @@
+.bbox() {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.clearfix-t() {
+    display: table;
+    &:after {
+        content: '. .';
+        display: block;
+        word-spacing: 99in;
+        height: 0;
+        overflow: hidden;
+
+        font-size: 0.13em;
+        line-height: 0;
+    }
+}
+
+.va_middle_out() {
+    font-size: 0;
+    line-height: 0;
+    &:after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 0;
+        vertical-align: middle;
+    }
+}
+
+.va_middle_in() {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.transition(@time: 0.2s;) {
+    -webkit-transition: all @time ease-out;
+    transition: all @time ease-out;
+}
+
+.plhl-color(@color) {
+    &::-webkit-input-placeholder {color:@color;}
+    &::-moz-placeholder          {color:@color;}
+    &:-moz-placeholder           {color:@color;}
+    &:-ms-input-placeholder      {color:@color;}
+}
+
+.cut-text() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.abs-center() {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.user-sel-n() {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.list-center-out() {
+    line-height: 0;
+    font-size: 0;
+    text-align-last: justify;
+    text-align: justify;
+    &:after {
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        content: '';
+        display: inline-block;
+    }
+}
+
+.list-center-in() {
+    display: inline-block;
+    vertical-align: top;
+    text-align-last: left;
+}
+
+.box-shadow(@x: 0; @y: 0; @blur: 1px; @color: #000) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name { @arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    animation: @arguments;
+}
+
+.vh() {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.vv() {
+    opacity: 1;
+    visibility: visible;
+}
+
+.translate (@x, @y:0) {
+    -webkit-transform:   translate(@x, @y);
+    -moz-transform: 	 translate(@x, @y);
+    -ms-transform: 		 translate(@x, @y);
+    -o-transform: 		 translate(@x, @y);
+}
