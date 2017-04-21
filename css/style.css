@@ -496,8 +496,16 @@ p {
   padding: 95px 0 170px;
   background: #fff;
 }
+.section__advisor {
+  padding: 95px 0 170px;
+}
 .section__media {
-  padding: 95px 0 15px;
+  padding: 95px 0 95px;
+  background-color: rgba(240, 240, 240, 0.3);  
+}
+.section__media .col-sm-6 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 .section__media .desc {
   margin-bottom: 66px;
@@ -659,6 +667,23 @@ p {
   opacity: 1;
   visibility: visible;
 }
+.team__name__inverse {
+  display: block;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;  
+}
+.team__profession__inverse {
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #FFFFFF;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 1;
+  visibility: visible;
+}
 .team__professionWrap {
   position: relative;
 }
@@ -691,6 +716,9 @@ p {
   opacity: 0;
   visibility: hidden;
 }
+.team__details__inverse {
+  background: #3a3665;
+}
 .team__detailsIn {
   width: 700px;
   margin: 0 auto;
@@ -707,10 +735,19 @@ p {
   color: #313538;
   margin-top: 76px;
 }
+.team__detailsName__inverse {
+  color: #FFFFFF;
+}
 .team__detailsProfession {
   display: block;
   color: rgba(109, 111, 112, 0.5);
   margin: 10px 0 60px;
+}
+.team__detailsProfession__inverse {
+  color: #FFFFFF;
+}
+.team__history__inverse {
+  color: #FFFFFF;
 }
 .team__detailsClose {
   display: inline-block;
@@ -728,6 +765,9 @@ p {
 }
 .team__detailsClose:hover {
   color: #fdcc59;
+}
+.team__detailsClose__inverse {
+  background: #3a3665;
 }
 .team__detailsClose:hover i {
   opacity: 0.8;
@@ -1940,6 +1980,20 @@ li:after {
 .modal-dialog .modal-content {
   height: 80%;
   overflow: auto;
+}
+.media__img {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  margin: 10px;
+}
+.media__img a {
+  margin: auto;
+}
+.media__img a img{
+  width: 200px;
+  background: transparent;
 }
 @media (max-width: 991px) {
   .tokenization__model__yellow__image {
