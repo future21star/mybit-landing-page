@@ -795,7 +795,7 @@ sub {
     -webkit-animation: chartTotal 0.3s 2s linear;
     animation-fill-mode: forwards;
   }
-  .team__item:hover .team__photoWrap:before {
+/*  .team__item:hover .team__photoWrap:before {
     opacity: 1;
   }
   .team__item:hover .team__profession {
@@ -807,3 +807,4 @@ sub {
     visibility: visible;
   }
 }
+*/

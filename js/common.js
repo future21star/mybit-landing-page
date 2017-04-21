@@ -82,6 +82,10 @@ Common = {
                    $(this).addClass('active');
                }
         });
+        // $('.mainNav__link').on('click', function(e) {
+        //     $('.mainNav__link').removeClass('active');
+        //     $(this).addClass('active');
+        // })
         $('.team__detailsClose_js').on('click',function (e){
             e.preventDefault();
             $(this).closest('.team__item').removeClass('active');
@@ -96,6 +100,11 @@ Common = {
         //language selection
         $('.dropdown__link').on('click', function(e){
             $('#current__language').text($(this).data("lan"));
+        });
+
+        $('.ask-question-link').on('click', function(e) {
+            $(this).hide();
+            $(this).next().show('fade in');
         });
         function afterReveal( el ) {
             el.addEventListener('animationend', function( ) {
@@ -192,25 +201,23 @@ Common = {
                 class: $(value).hasClass('section__inverse') ? 'dark' : 'light'
             }
             currentTopPixel += $(value).innerHeight();
-            Common.sectionArray.push(section);
+            if (i > 0) {
+                Common.sectionArray.push(section);                
+            }
         });
     },
 
     colorMainMenu: function () {
         this.mainLinkArray = [];
-        if($(window).width() > 767) {
-            $('.mainNav__link').each( function (i,value){
-                for(var i in Common.sectionArray) {
-                    if($(value).offset().top > Common.sectionArray[i].start && $(value).offset().top <= Common.sectionArray[i].end) {
-                        $(value).removeClass('dark').removeClass('light');
-                        $(value).addClass(Common.sectionArray[i].class);
-                        break;
-                    }
-                }
-            });
-        } else {
-            $('.mainNav__link ').removeClass('dark').removeClass('light');
-        }
+        // $('.mainNav__link').removeClass('dark').removeClass('light');
+        $('.mainNav__link').each(function(i, value) {
+            $(this).removeClass('active');
+        });
+        for(var i in Common.sectionArray) { 
+            if($(".mainNav__wrap").offset().top > Common.sectionArray[i].start - 20 && $(".mainNav__wrap").offset().top <= Common.sectionArray[i].end - 20) {
+                $($('.mainNav__link')[i]).addClass('active');
+            }                    
+        }            
     },
 
     slickInit: function () {

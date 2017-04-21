@@ -1081,7 +1081,7 @@ p {
   height: 24px;
   font-weight: 300;
   position: relative;
-  color: rgba(49, 43, 82, 0.3);
+  color: #000000;
 }
 .mainNav__link:after {
   content: none;
@@ -1096,7 +1096,7 @@ p {
   transition: all 0.2s ease-out;
 }
 .mainNav__link:focus {
-  color: rgba(49, 43, 82, 0.3);
+  color: #000;
 }
 .mainNav__link.active:after,
 .mainNav__link:hover:after {
@@ -1117,7 +1117,7 @@ p {
   color: rgba(0,0,0,0.5);
 }
 .mainNav__link.active {
-  color: black;
+  color: gray;
 }
 .mainNav__link.light {
   color: rgba(49, 43, 82, 0.3);
